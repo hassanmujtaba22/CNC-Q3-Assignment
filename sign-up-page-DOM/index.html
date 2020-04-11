@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Page</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'> -->
+    <!-- <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css'> -->
+    <!-- <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center mt-0">
+            <div class="col-11 col-sm-9 col-md-7 col-lg-10 text-center p-0 mt-3 mb-2">
+            <div class="card px-0 pt-4 pb-0 mt-3 mb-3" id="main">
+            <form action="#" id="formbody">
+                
+                <!-- progress bar -->
+                <ul id="progressbar">
+                    <li class="active" id="account"><strong>Account</strong></li>
+                    <li id="personal"><strong>Personal Information</strong></li>
+                    <li id="professional"><strong>Professional Information</strong></li>
+                    <li id="confirm"><strong>Finish</strong></li>
+                </ul>
+
+                <div class="title">
+                    <h1>Sign up</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, vitae quia quam repellendus voluptatum animi repudiandae natus aperiam reiciendis molestias delectus tempore error, numquam voluptate, ducimus sit! Nesciunt reiciendis, repellat assumenda eligendi perspiciatis corrupti fuga earum obcaecati, molestiae sapiente deserunt fugit sunt ipsum exercitationem, ut mollitia non officia dolor accusantium?</p>
+                </div>
+                
+                <!-- fieldset 1-->
+                <fieldset id="field1">
+                    <div class="form-card">
+                        <h2 class="fs-title">Account Information</h2>
+                        <input class="forminput" type="text" placeholder="First Name" id="fname" required>
+                        <input class="forminput" type="text" placeholder="Last Name" id="lname">
+                        <input class="forminput" type="email" placeholder="Email Address" id="email">
+                        <input class="forminput" type="email" placeholder="Confirm Email Address">
+                        <p>Password must be atlest 8 characters long. Including both numbers and letters. Feel free to include special characters too.</p>
+                        <input class="forminput" type="password" placeholder="Password" id="password">
+                        <input class="forminput" type="password" placeholder="Confirm Password">
+                        <section>
+                        <input id="sub" type="button" name="next" class="next action-button" value="Next Step" />
+                        </section>
+                    </div>
+                </fieldset>
+
+                <!-- fieldset 2-->
+
+                <fieldset id="field2">
+                    <div class="form-card">
+                        <h2 class="fs-title">Personal Information</h2>
+                        <select class="forminput" id="office">
+                            <option value="" selected>Nearest Office</option>
+                            <option value="">Saylani Gulshan</option>
+                            <option value="">Saylani Bahadurabad</option>
+                            <option value="">PIAIC Head Quater</option>
+                            <option value="">Axiom</option>
+                        </select>
+        
+                        <input class="forminput" type="text" placeholder="Address 1" id="address1">
+                        <input class="forminput" type="text" placeholder="Address 2" id="address2">
+                        <input class="forminput" type="text" placeholder="City" id="city">
+                        <p>Where will you relocate to?</p>
+                        <select class="forminput" id="state">
+                            <option value="" selected>State</option>
+                            <option value="">Sindh</option>
+                            <option value="">Pubjab</option>
+                            <option value="">Balochistan</option>
+                            <option value="">KPK</option>
+                        </select> 
+        
+                        <select class="forminput" id="country">
+                            <option value="" selected>Country</option>
+                            <option value="">Pakistan</option>
+                            <option value="">Saudi Arab</option>
+                            <option value="">America</option>
+                            <option value="">Australia</option>
+                            <option value="">Dubai</option>
+                        </select>
+        
+                        <input class="forminput" type="text" placeholder="Post Code" pattern="[0000]{4}" id="postCode">
+                        <input class="forminput" type="number" placeholder="Phone Number" id="phoneNumber">
+                        <input class="forminput" type="number" placeholder="Mobile Number" id="mobileNumber">
+                        <section>
+                            <input id="back1" type="button" name="previous" class="previous action-button-previous" value="Previous" /> 
+                            <input id="sub1" type="button" name="next" class="next action-button" value="Next Step" />  
+                        </section>
+                    </div> 
+                </fieldset>
+
+                <!-- fieldset 3-->
+
+                <fieldset id="field3">
+                <div class="form-card">
+                        <h2 class="fs-title">Professional Information</h2>
+                        <select class="forminput" id="job">
+                            <option value="">Categories</option>
+                            <option value="">Management</option>
+                            <option value="">It Department</option>
+                        </select>
+                        <input class="forminput" type="text" placeholder="Job Title" id="jobTitle"> 
+                        <input class="forminput" type="number" placeholder="Years of Experience" id="experience">
+                        <input class="forminput" type="date" placeholder="Your Date of Birth" id="dob">
+                        <input class="forminput" type="number" placeholder="Your Age" id="age">
+                        <p>Picture</p>
+                        <input class="forminput" type="file" name="fileToUpload" value="File" id="file">
+                        <!-- <input id="checkbox" type="checkbox" name="term"><p>I've read and agree to the Terms and Conditions</p> -->
+                        <section>
+                            <input id="back2" type="button" name="previous" class="previous action-button-previous" value="Previous" />
+                            <input id="sub2" type="button" name="make_payment" class="next action-button" value="Submit" />
+                        </section>
+                        </div>
+                </fieldset>
+
+
+                <fieldset id="field4">
+                    <div class="form-card">
+                        <h2 class="fs-title text-center">Success !</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-7 text-center">
+                                <h5>You Have Successfully Signed Up</h5>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+
+
+            </form>
+        </div> 
+        </div>
+        </div>
+        </div>
+
+        <script src="./app.js" type="text/javascript"></script>
+</body>
+</html>
