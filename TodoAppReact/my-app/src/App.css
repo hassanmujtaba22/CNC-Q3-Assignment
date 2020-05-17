@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading h1{
+  margin: 10px auto !important;
+  font-weight: bold;
+  text-align: center;
+}
+.heading p{
+  color: green;
+  font-weight: bold;
+}
+.form-control:focus::placeholder{
+  font-weight: bold;
+}
+.btn-primary{
+  width: 100%;
+  font-weight: bold;
+  margin: 10px auto;
+}
+.list-group-item{
+  padding: 5px 10px !important;
+}
+table{
+  width: 100%;
+}
+table tr td{
+  width: 50%;
+}
+table tr .items{
+  font-weight: bold;
+  color: gray;
+}
+table tr .dlt-btn{
+  text-align: right;
+}
+
